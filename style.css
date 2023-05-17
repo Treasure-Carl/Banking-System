@@ -1,0 +1,144 @@
+:root{
+   
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,39,0.9823054635761589) 63%, rgba(16,121,9,1) 100%); */
+    background-image:linear-gradient(to bottom right, #305170, #6DFC6B);
+
+   }
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    background: var(--background-color);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* <this makes the whole of the body content to align to the center because we are giving 100vh --> */
+    justify-content: center;
+    height: 100vh; 
+    /* width: auto;  */
+ }
+ a {
+    text-decoration: none;
+    outline: none;
+ }
+ ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+ }
+ ul li:hover p{
+    transform: scale(1.5);
+    opacity: 1;
+ }
+ ul li:hover a{
+opacity: 1;
+ }
+
+ i {
+    color: #fff;
+ }
+ .selector-menu{
+    display:flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+ }
+ .selector-menu a {
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 60px;
+ }
+ /* The below tag simply means when our selector menu class is not focused (clickedOn)*/
+ .selector-menu a:hover:not(:focus){
+    background: rgba(0,0,0, 0.6);
+ }
+ /* focus simply means everything we are focusing on at the moment */
+ .selector-menu a:focus{
+    transform: scale(1.2);
+    background:rgba(0,0,0, 0.9) ;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.6);
+    
+
+ }
+ .menu-container{
+   display: grid;
+   justify-content: center;
+    width:360px;
+    padding: 1em;
+ }
+ .head-image{
+background: url(backgroundbankimage.avif);
+
+/* "https://images.pexels.com/photos/8353790/pexels-photo-8353790.jpeg?auto=compress&cs=tinysrgb&w=600" */
+    /* background-position: cover; */
+    background-size: cover;
+    height: 180px;
+    width: 330px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+ .overlay{
+    background: rgba(0,0,0,0.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    /* width: 90vh;
+    height: 90vw; */
+ }
+ .balance{
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+    color: gray;
+    bottom: 20px;
+    left: 20px;
+    /* position: absolute; */
+ }
+ .balance h1{
+    font-size: 1.6rem;
+ }
+ .balance div{
+    display: flex;
+    align-items: center;
+
+
+ }
+ .balance p{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 5px;
+ }
+ .list a, .list p{
+    color: #000;
+    opacity: 0.4;
+    /* border-bottom:4px solid black; */
+ }
+ .item{
+   background: #fff;
+    padding: 20px;
+   
+  }
+  hr{
+ 
+   height: 5px;
+   /* border-bottom:2px solid #000; */
+ }
+
+ .item:not(:last-child){
+    border-bottom: 1px solid #dedede;
+
+ }
+ .item:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px ;
+ }
