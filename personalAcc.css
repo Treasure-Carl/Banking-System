@@ -31,8 +31,10 @@
     cursor: pointer;
  }
  ul li:hover p{
-    transform: scale(1.5);
-    opacity: 1;
+    transition: scale(0.4sec);
+    font-size: large;
+    color: rgb(201, 190, 190);
+    /* opacity: 1; */
  }
  ul li:hover a{
 opacity: 1;
